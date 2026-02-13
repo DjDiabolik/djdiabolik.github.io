@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Redirect...</title>
+    <script>
+        var path = window.location.pathname.toLowerCase();
+        
+        // Se l'utente cercava il timer (in qualunque modo lo abbia scritto)
+        if (path.includes("boxingtimer")) {
+            // Redirect diretto all'app
+            window.location.replace("https://djdiabolik.github.io/BoxingTimer/");
+        } else {
+            // Per ogni altro errore, riportalo alla home dei progetti
+            window.location.replace("https://djdiabolik.github.io/");
+        }
+    </script>
+</head>
+<body>
+    <p>Reindirizzamento in corso...</p>
+</body>
+</html>
